@@ -1,0 +1,11 @@
+FROM node:current-alpine3.10
+
+WORKDIR '/app'
+
+# Install some dependencies
+COPY package.json .
+RUN npm install
+
+COPY . .
+
+CMD ["npm", "run", "start"]
