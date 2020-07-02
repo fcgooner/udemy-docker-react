@@ -1,4 +1,4 @@
-FROM node:current-alpine3.10 as builder
+FROM node:current-alpine3.10
 WORKDIR '/app'
 # Install some dependencies
 COPY package*.json ./
